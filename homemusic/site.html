@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit; 
+            }
+
+            .galeria {
+                background-position: center;
+                padding: 100px;
+                column-count: 3;
+                display: flex;
+                gap: 300px;
+            }
+             .galeria img {
+                border: solid 2px #ffff;
+                max-width: 80%;
+                margin-bottom: 5px;
+
+            }
+
+            body {
+                font-family: serif ;
+                color: rgb(255, 255, 255);
+                padding: 18;
+                background-image: url(galeria/preto.jpg);
+                background-size: cover;
+            }
+
+            .item {
+                text-align: center;
+                font-size: 50px;
+            }
+
+            .item img {
+                max-width: 400px; max-height: 350px; 
+                
+            }
+        </style>
+    </head>
+<body>
+    <h1 id="titulo">NOT NOWEST</h1>
+    <div class="galeria">
+
+        <div class="item">
+            <a href="https://soundcloud.com/not-nowest/facts">
+            <img src="galeria/facts.png" alt="facts";>
+        <p> FACTS</p></div></a>
+
+        <div class="item">
+            <a href="https://soundcloud.com/not-nowest/curve">
+            <img src="galeria/po.png" alt="curve";>
+        <p> CURVE</p>
+        </div></a>
+        
+        <div class="item">
+            <a href="https://soundcloud.com/not-nowest/seen">
+            <img src="galeria/seen.jpg" alt="seen">
+        <p> SEEN</p>
+        </div> </a>
+        
+    </div>
+
+    
+    
+</body>
+</html>
