@@ -8,13 +8,13 @@
                 text-align: center;
             }
 
+
             a {
                 text-decoration: none;
                 color: inherit; 
             }
 
             .galeria {
-                background-position: center;
                 padding: 100px;
                 column-count: 3;
                 display: flex;
@@ -31,8 +31,10 @@
                 font-family: serif ;
                 color: rgb(255, 255, 255);
                 padding: 18;
-                background-image: url(galeria/preto.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
                 background-size: cover;
+                background-color:black;
             }
 
             .item {
@@ -42,12 +44,36 @@
 
             .item img {
                 max-width: 400px; max-height: 350px; 
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
                 
             }
+            .linha {
+                    height: 2px;
+                 background-color: white;
+                 margin: 20px 0;
+                 
+            }
+            .spng img  {
+                max-width: 5%;    
+                
+            }
+
+            .spng {
+                column-count: 2;
+                display: flex;  
+                gap: 20px; 
+            }
+
+           
+           
         </style>
     </head>
 <body>
-    <h1 id="titulo">NOT NOWEST</h1>
+    <h1 id="titulo">PORTFOLIO</h1>
+    
+    <div class="linha"></div>
+    
     <div class="galeria">
 
         <div class="item">
@@ -67,8 +93,22 @@
         <p> SEEN</p>
         </div> </a>
         
+        
+        
     </div>
 
+
+    <div class="linha"></div>
+    <p>all the beats are available on SoundCloud and Youtube</p>
+
+    <div class="spng">
+        <img src="galeria/scld.png" alt="soundpng">
+   
+    <div class="spng">
+        <img src="galeria/ytyt.png" alt="ytyt">
+        
+   </a></a> </div>
+    
     
     
 </body>
